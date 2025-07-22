@@ -1,7 +1,31 @@
 /vendor
 /node_modules
+
+# Laravel specific
+.env.*.backup
+.env.local
+.env.me
+.env.testing
+.phpunit.result.cache
+/storage/*.key
+/storage/*.log
+/storage/debugbar
+/storage/framework/cache/data
+/storage/framework/sessions
+/storage/framework/views
 /storage/logs
-.env.*
-.git
-.gitignore
+
+# IDE and OS files
+.idea
+.vscode
 .DS_Store
+Thumbs.db
+
+# Composer files you don't want to commit
+composer.lock
+
+# SQLite database
+/database/database.sqlite
+
+# Optional: if you want to add the SQLite file, remove above line
+# and add database/database.sqlite explicitly to Git
